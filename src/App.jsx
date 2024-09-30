@@ -12,11 +12,11 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <BrowserRouter> 
+    <BrowserRouter basename="/Fitness-Website"> 
     <Navbar/>
       <Routes>
         {/* <Route index element={<Home/>}/> */}
-        <Route path='/' element={<Home/>}/>
+        <Route path='/' element={<Home/>} exact/>
         <Route path='about' element={<About/>}/>
         <Route path='contact' element={<Contact/>}/>
         <Route path='gallery' element={<Gallery/>}/>
